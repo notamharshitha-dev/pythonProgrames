@@ -1,6 +1,6 @@
 import random
 import sys
-random_num=random.randint(1,100)
+random_num=random.randint(1,10)
 
 while(1):
     g_num=int(input("Enter the guessed number "))
