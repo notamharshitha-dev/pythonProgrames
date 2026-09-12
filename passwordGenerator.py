@@ -13,6 +13,6 @@ while(len(p_set)<=p_length):
     p_set+=random.choice(uppercase_set)
     p_set+=random.choice(lowercase_set)
     p_set+=random.choice(splchar_set)
-print("The generated password is ",p_set)
+#print("The generated password is ",p_set)
 print("The generated password is ",p_set[0:p_length+1])
     
