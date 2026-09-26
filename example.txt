@@ -1,0 +1,1 @@
+Hello bro welcome to the concept of filehandling in python and from here the game starts
