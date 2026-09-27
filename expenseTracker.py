@@ -3,15 +3,30 @@ import sys
 dict_expense={}
 def addExpense():
     while True:
-        key=input("Enter the category (Type quit at the stop) ")
-        if key.lower()=='quit':
-                    print("Quit")
-                    break
-        value=int(input("Enter the Expense "))
-        
+        key=input("Enter thssse category (Type quit at the stop) ")
+        if key=='quit' or key.upper()=="QUIT":
+                print("Quit")
+                break
+        value=input("Enter the Expense")
         dict_expense[key]=value
-        print(dict_expense)
-    print("\nExpense added successfullyy\n")
+        '''try:
+            file_write=open("expenses.txt",'a')
+            value=int(input("Enter the Expense "))        
+            dict_expense[key]=str(value)
+            print(dict_expense)
+            file_write.append(f"\n{key}:{value}\n")
+            print("\nExpense added successfullyy\n")
+        finally:
+            file_write.close()'''
+        try:
+            file_write=open("expense.txt",'w')
+            for key,value in dict_expense.items():
+                file_write.write(f"{key}:{value}\n")
+        finally:
+            file_write.close()
+             
+        print("\n THe Expense Added Successfulyy.....")
+        
 def display():
     print("\nThe expensess areee...\n")
 def deleteExpense():
