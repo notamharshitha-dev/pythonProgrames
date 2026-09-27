@@ -1,4 +1,5 @@
 #file read,write and delete operation operations
+import sys
 def read():
     print("The data in the file is........\n")
 def write():
@@ -10,4 +11,5 @@ while(True):
     match op_num: 
         case 1:read()
         case 2:write()
-        case 3:
+        case 3:delete()
+        case 4:sys.exit()
