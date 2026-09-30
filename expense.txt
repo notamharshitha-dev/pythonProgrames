@@ -1,5 +1,6 @@
-vegetables:600
+vegetabvegetablvegetables:600
 clothes:1000
 friuts:500
 friuts:500
 medicines:500
+snacks:400

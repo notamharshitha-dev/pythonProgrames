@@ -25,11 +25,25 @@ def display():
         content=file_read.readlines()
         #print(content)
         for index,i in enumerate(content):
-            print("\n",i)
+            print("\n",index+1,i)
     finally:
         file_read.close()
 def deleteExpense():
     print("\nExpense got deleted successfullyy\n")
+    try:
+        file_del=open("expense.txt",'r+')
+        ele=int(input("enter the index of the element"))
+        content=file_del.readlines()
+        print(content)
+        del content[ele-1]
+        print(content)
+        file_del.seek(ele)
+        file_del.writelines(content)
+        file_del.truncate()
+
+    finally:
+        file_del.close()
+
 def TotalExpense():
     total=0
     try:
