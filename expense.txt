@@ -1,2 +1,5 @@
-jkjkj:898
-1:jiji
+vegetables:600
+clothes:1000
+friuts:500
+friuts:500
+medicines:500
